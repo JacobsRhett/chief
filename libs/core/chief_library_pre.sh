@@ -344,7 +344,7 @@ function __build_git_prompt() {
     fi
 
     if ${CHIEF_CFG_COLORED_PROMPT}; then
-        __git_ps1 "${ve_name}${MAGENTA}\u${NC}@${GREEN}\h${NC}:${YELLOW}${prompt_tag}${NC}" "\\\$ "
+        __git_ps1 "${ve_name}${RED}[\@] ${BLUE}\u${NC}@${GREEN}\h${NC}:${YELLOW}${prompt_tag}${NC}" "\\\$ "
     else
         __git_ps1 "${ve_name}\u@\h:${prompt_tag}" "\\\$ "
     fi
